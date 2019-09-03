@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#010f10"
+    tools:context="com.example.user.musicplayer.Player">
+
+    <SeekBar
+        android:id="@+id/seekBar"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        tools:layout_editor_absoluteX="163dp"
+        tools:layout_editor_absoluteY="331dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="21dp" />
+
+    <Button
+        android:background="@drawable/prev"
+        android:id="@+id/btnPrev"
+        android:layout_width="65dp"
+        android:layout_height="70dp"
+        android:layout_marginBottom="21dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginStart="25dp"
+        android:text="@string/button"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:background="@drawable/cutprev"
+        android:id="@+id/btnFastBackward"
+        android:layout_width="65dp"
+        android:layout_height="70dp"
+        android:layout_alignTop="@+id/btnPrev"
+        android:layout_marginLeft="1dp"
+        android:layout_marginStart="1dp"
+        android:layout_toEndOf="@+id/btnPrev"
+        android:layout_toRightOf="@+id/btnPrev"
+        android:text="@string/back" />
+
+    <Button
+        android:background="@drawable/play"
+        android:id="@+id/btnPlay"
+        android:layout_width="60dp"
+        android:layout_height="70dp"
+        android:layout_alignTop="@+id/btnFastBackward"
+        android:layout_marginLeft="1dp"
+        android:layout_marginStart="1dp"
+        android:layout_toEndOf="@+id/btnFastBackward"
+        android:layout_toRightOf="@+id/btnFastBackward"
+        android:text="@string/pause" />
+
+    <Button
+        android:background="@drawable/cutnext"
+        android:id="@+id/btnFastForward"
+        android:layout_width="65dp"
+        android:layout_height="70dp"
+        android:layout_alignTop="@+id/btnPlay"
+        android:layout_marginLeft="1dp"
+        android:layout_marginStart="1dp"
+        android:layout_toEndOf="@+id/btnPlay"
+        android:layout_toRightOf="@+id/btnPlay"
+        android:text="@string/next" />
+
+    <Button
+        android:background="@drawable/next"
+        android:id="@+id/btnNext"
+        android:layout_width="65dp"
+        android:layout_height="70dp"
+        android:text="@string/next2"
+
+        android:layout_marginLeft="3dp"
+        android:layout_marginStart="3dp"
+        android:layout_alignBottom="@+id/btnFastForward"
+        android:layout_toRightOf="@+id/btnFastForward"
+        android:layout_toEndOf="@+id/btnFastForward" />
+
+</RelativeLayout>
